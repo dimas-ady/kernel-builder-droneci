@@ -7,7 +7,7 @@ jobs:
       - run:
           no_output_timeout: 30m 
           command: |
-            git clone https://github.com/dimas-ady/kernel-builder-droneci
+            git clone https://github.com/dimas-ady/kernel-builder-droneci -b perf
             cd kernel-builder-droneci
             bash run.sh
 workflows:
