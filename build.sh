@@ -27,7 +27,7 @@ err() {
 }
 
 KERNEL_DIR="$(pwd)"
-ZIPNAME="Brutal-PureCAF Kernel"
+ZIPNAME="Perf Kernel with SU"
 MODEL="Asus Zenfone Max Pro M1"
 DEVICE="X00TD"
 DEFCONFIG=X00TD_defconfig
@@ -88,7 +88,7 @@ then
 		export KBUILD_BUILD_VERSION=$DRONE_BUILD_NUMBER
 		export KBUILD_BUILD_HOST=DroneCI
 		else
-		  export KBUILD_BUILD_HOST=XZXZ
+		  export KBUILD_BUILD_HOST=dimasady
 		fi
 		PROG_LINK="https://cloud.drone.io/${DRONE_REPO}/${DRONE_BUILD_NUMBER}/1/2"
 		export CI_BRANCH=$DRONE_BRANCH
