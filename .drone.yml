@@ -2,7 +2,7 @@
 clone: 
   depth: 1
 kind: pipeline
-name: Brutal Kernel Compilation
+name: Kernel Compiling
 steps: 
   - 
     commands: 
@@ -16,7 +16,7 @@ steps:
         from_secret: GH_EMAIL
       GITHUB_USERNAME:
         from_secret: GH_USERNAME
-    image: fadlyas/kernel_dockerfile:latest
+    image: brock5555/recovery
     name: Compilation
     trigger: 
       branch: 
