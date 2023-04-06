@@ -16,7 +16,7 @@ steps:
         from_secret: GH_EMAIL
       GITHUB_USERNAME:
         from_secret: GH_USERNAME
-    image: brock5555/recovery
+    image: alpine
     name: Compilation
     trigger: 
       branch: 
