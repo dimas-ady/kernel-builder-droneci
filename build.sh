@@ -140,7 +140,7 @@ DATE=$(TZ=Asia/Jakarta date +"%Y%m%d-%T")
   fi
 
 	msg "// Cloning Anykernel3 //" 
-	git clone https://github.com/dimas-ady/AnyKernel3.git
+	git clone https://github.com/dimas-ady/AnyKernel3.git -b perf
 }
 
 exports() {
