@@ -12,6 +12,6 @@ BRANCH=lineage-17.1-su-2
 
 git config --global user.name $GITHUB_USERNAME
 git config --global user.email $GITHUB_EMAIL
-git clone $KERNEL_REPO -b $BRANCH kernel
+git clone --recursive $KERNEL_REPO -b $BRANCH kernel
 cd kernel
 bash ../build.sh
