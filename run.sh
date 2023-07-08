@@ -7,7 +7,7 @@ then
   username=$CIRCLE_USERNAME
 fi
 
-KERNEL_REPO=https://github.com/aslenofarid/kernel_asus_sdm660/commits/lineage-17.1
+KERNEL_REPO=https://github.com/aslenofarid/kernel_asus_sdm660
 BRANCH=lineage-17.1
 
 git config --global user.name $GITHUB_USERNAME
