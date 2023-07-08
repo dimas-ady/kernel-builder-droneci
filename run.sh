@@ -14,7 +14,4 @@ git config --global user.name $GITHUB_USERNAME
 git config --global user.email $GITHUB_EMAIL
 git clone --recursive $KERNEL_REPO -b $BRANCH kernel
 cd kernel
-git remote add asl https://github.com/aslenofarid/kernel_asus_sdm660
-git fetch asl
-git cherry-pick 1a1c7c0
 bash ../build.sh
