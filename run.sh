@@ -7,15 +7,11 @@ then
   username=$CIRCLE_USERNAME
 fi
 
-KERNEL_REPO=https://github.com/aslenofarid/kernel_asus_sdm660
-BRANCH=lineage-17.1
+KERNEL_REPO=https://$GITHUB_USERNAME:$GITHUB_TOKEN@github.com/dimas-ady/kernel_asus_sdm660.git
+BRANCH=lineage-17.1-su-2
 
 git config --global user.name $GITHUB_USERNAME
 git config --global user.email $GITHUB_EMAIL
 git clone --recursive $KERNEL_REPO -b $BRANCH kernel
 cd kernel
-git remote add dms https://github.com/dimas-ady/kernel_asus_sdm660
-git fetch dms
-curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
-git cherry-pick b175639^..1b51943
 bash ../build.sh
