@@ -27,7 +27,7 @@ err() {
 }
 
 KERNEL_DIR="$(pwd)"
-ZIPNAME="Droopy with KALLSYMS"
+ZIPNAME="Droopy with SU"
 MODEL="Asus Zenfone Max Pro M1"
 DEVICE="X00TD"
 DEFCONFIG=X00T_defconfig
