@@ -218,6 +218,7 @@ build_kernel() {
   git remote add mysu https://github.com/dimas-ady/kernel_asus_sdm660
   git fetch mysu
   git cherry-pick b175639^..1b51943
+  git cherry-pick 77a63c3
   
   # String
   if [ $OC == Y ]
