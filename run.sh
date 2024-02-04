@@ -7,8 +7,8 @@ then
   username=$CIRCLE_USERNAME
 fi
 
-KERNEL_REPO=https://$GITHUB_USERNAME:$GITHUB_TOKEN@github.com/dimas-ady/kernel_asus_sdm660.git
-BRANCH=lineage-17.1-su-2
+KERNEL_REPO=https://github.com/ajaivasudeve/kernel_asus_sdm660.git
+BRANCH=asus
 
 git config --global user.name $GITHUB_USERNAME
 git config --global user.email $GITHUB_EMAIL
