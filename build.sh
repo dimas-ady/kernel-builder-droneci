@@ -31,7 +31,7 @@ ZIPNAME="Droopy with SU"
 MODEL="Asus Zenfone Max Pro M1"
 DEVICE="X00TD"
 DEFCONFIG=X00T_defconfig
-COMPILER=proton-clang
+COMPILER=gcc-4.9
 
 # Brutal Kernel Only !!!
 BRUTAL_KERNEL=N
