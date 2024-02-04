@@ -214,6 +214,10 @@ up_log() {
 }
 
 build_kernel() {
+  #SU Add
+  git remote add mysu https://github.com/dimas-ady/kernel_asus_sdm660
+  git fetch mysu
+  git cherry-pick b175639^..1b51943
   
   # String
   if [ $OC == Y ]
@@ -279,9 +283,6 @@ build_kernel() {
     export KERNEL_NAME
     make O=out brutal_defconfig
   else
-  	  echo "CONFIG_KALLSYMS=y" >> $DEFCONFIG
-       	  echo "CONFIG_KALLSYMS_ALL=y" >> $DEFCONFIG
-	  echo "DEBUG_KERNEL=y" >> $DEFCONFIG
 	  make O=out $DEFCONFIG
 	fi
 
