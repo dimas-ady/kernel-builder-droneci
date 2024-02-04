@@ -27,10 +27,10 @@ err() {
 }
 
 KERNEL_DIR="$(pwd)"
-ZIPNAME="Perf Kernel with SU"
+ZIPNAME="Droopy with KALLSYMS"
 MODEL="Asus Zenfone Max Pro M1"
 DEVICE="X00TD"
-DEFCONFIG=X00TD_defconfig
+DEFCONFIG=X00T_defconfig
 COMPILER=clang
 
 # Brutal Kernel Only !!!
@@ -279,6 +279,9 @@ build_kernel() {
     export KERNEL_NAME
     make O=out brutal_defconfig
   else
+  	  echo "CONFIG_KALLSYMS=y" >> $DEFCONFIG
+       	  echo "CONFIG_KALLSYMS_ALL=y" >> $DEFCONFIG
+	  echo "DEBUG_KERNEL=y" >> $DEFCONFIG
 	  make O=out $DEFCONFIG
 	fi
 
